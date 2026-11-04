@@ -1,7 +1,7 @@
 import { useState } from "react";
 import InsuranceTabs, { TabKey } from "./InsuranceTabs";
 import QuoteForm from "./QuoteForm";
-import banner from "@/assets/genesis-banner.jpg.asset.json";
+import bannerSrc from "@/assets/genesis-banner.jpg";
 import { useDesktopSite } from "@/hooks/use-desktop-site";
 
 const DESKTOP_FRAME_WIDTH = 1120;
@@ -15,7 +15,7 @@ const HeroSection = () => {
       <section className="relative overflow-hidden bg-background">
         <div className="px-1 pb-6">
           <div className="mx-auto w-[1120px]" style={{ zoom: scale }}>
-            <img src={banner.url} alt="أمّن وادخل السحب على 3 سيارات جينيسيس وكاش باك 100%" className="block w-full" />
+            <img src={bannerSrc} alt="أمّن وادخل السحب على 3 سيارات جينيسيس وكاش باك 100%" className="block w-full" />
 
             <div>
               <div className="mx-auto max-w-[1120px] bg-transparent pt-0 shadow-none">
@@ -36,7 +36,7 @@ const HeroSection = () => {
 
   return (
     <section className="relative lg:bg-muted/30">
-      <img src={banner.url} alt="أمّن وادخل السحب على 3 سيارات جينيسيس وكاش باك 100%" className="mx-auto block w-full max-w-[420px] lg:max-w-[1120px]" />
+      <img src={bannerSrc} alt="أمّن وادخل السحب على 3 سيارات جينيسيس وكاش باك 100%" className="mx-auto block w-full max-w-[420px] lg:max-w-[1120px]" />
 
       {/* Tabs strip — sits flush below hero on desktop, right-aligned, no card */}
       <div className="-mt-4 relative px-5 lg:mt-0 lg:px-0">

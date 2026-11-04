@@ -2,11 +2,11 @@ import { Link } from "@tanstack/react-router";
 import { Car, HeartPulse, Plane, Home, Timer, BadgePercent, Headphones, Search, Globe, UserCircle2, X } from "lucide-react";
 import { useState } from "react";
 import logo from "@/assets/bcare-logo.svg";
-import heroMobile from "@/assets/bcare-hero-mobile.jpg.asset.json";
+import heroMobileSrc from "@/assets/bcare-hero-mobile.jpg";
 import PartnersStrip from "@/components/site/PartnersStrip";
 import SiteFooter from "@/components/site/SiteFooter";
 import FloatingButtons from "@/components/site/FloatingButtons";
-import hero from "@/assets/bcare-hero.jpg.asset.json";
+import heroSrc from "@/assets/bcare-hero.jpg";
 import { cn } from "@/lib/utils";
 
 const cats = [
@@ -75,13 +75,13 @@ const Landing = () => {
     </nav>
 
     <section className="relative overflow-hidden bg-gradient-to-b from-brand-blue/10 to-background">
-      <img src={hero.url} alt="" className="absolute inset-0 hidden h-full w-full object-cover lg:block lg:object-left" />
+      <img src={heroSrc} alt="" className="absolute inset-0 hidden h-full w-full object-cover lg:block lg:object-left" />
       <div className="mx-4 my-4 overflow-hidden rounded-xl bg-gradient-to-b from-brand-blue/15 to-brand-blue/5 lg:hidden">
         <div className="px-4 pt-5 text-right">
           <h1 className="text-[26px] font-semibold leading-[1.4] text-brand-blue">المنصة الأذكى لمقارنة عروض تأمين السيارات في السعودية</h1>
           <p className="mt-2 text-[13px] leading-[1.7] text-brand-blue-dark">المنصة الأذكى لمقارنة عروض أكثر من 20 شركة تأمين. احصل على أرخص تأمين سيارات مع إصدار فوري وربط مباشر بنجم</p>
         </div>
-        <img src={heroMobile.url} alt="أمّن وادخل السحب على 3 سيارات Genesis وكاش باك 100%" className="mt-3 w-full" />
+        <img src={heroMobileSrc} alt="أمّن وادخل السحب على 3 سيارات Genesis وكاش باك 100%" className="mt-3 w-full" />
       </div>
       <div className="px-4 lg:hidden">
         <Link to="/quote" className="flex h-14 w-full items-center justify-center rounded-lg bg-brand-orange text-[18px] font-semibold text-white shadow-md">طلب العروض</Link>
